@@ -1,0 +1,96 @@
+html, body, #app {
+  height : 100%;
+  font-family : Microsoft YaHei,PingFangSC-Regular,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif !important;
+  // 全局膜层
+  .v-modal {
+    // 要黑不要白，默认黑
+    // background-color: #fff;
+  }
+  // 全局选项下拉
+  .el-select-dropdown {
+    .el-select-dropdown__item {
+      font-size: 12px;
+      &.selected {
+        color: $cloudColor;
+      }
+    }
+  }
+  // 全局卡片
+  .el-card {
+    border-radius : 0;
+    border : 0 none;
+  }
+  // 全局链接
+  .el-link {
+    &.el-link--primary {
+      &:not(.is-disabled) {
+        color: $cloudColor;
+      }
+      &.is-disabled {
+        color: #101010;
+      }
+    }
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: $cloudColor;
+    border-color: $cloudColor;
+  }
+}
+
+#app {
+  // background-color: #f8f9fd;
+  background-color : #FFFFFF;
+  overflow : hidden;
+}
+.agreement__main {
+  .el-row {
+    .title {
+      line-height : 42px;
+      font-size : 28px;
+      font-weight : normal;
+    }
+    .info {
+      padding-right : 50px;
+      padding-bottom : 10px;
+      width : 574px;
+      font-size : 14px;
+      border-bottom : 1px solid #BBBBBB;
+      .el-link--inner {
+        color : inherit;
+        .download-icon {
+          display : inline-block;
+          width : 24px;
+          height : 24px;
+          vertical-align : middle;
+          background : url(https://gaoruiyun-wechat.oss-cn-shenzhen.aliyuncs.com/portal.apps/icons/download.png) no-repeat;
+          background-size : 100%;
+        }
+        &:hover {
+          .download-icon {
+            background-image : url(https://gaoruiyun-wechat.oss-cn-shenzhen.aliyuncs.com/portal.apps/icons/downloadHover.png);
+          }
+        }
+      }
+    }
+    .content {
+      margin-top : 10px;
+      .content-list {
+        p {
+          margin-top : 16px;
+          line-height : 2;
+          font-size : 14px;
+          &.list-text {
+            text-indent : 2em;
+          }
+        }
+        .fontBold {
+          font-weight : bold;
+        }
+        .textUnderline {
+          text-decoration : underline;
+        }
+      }
+    }
+  }
+}
